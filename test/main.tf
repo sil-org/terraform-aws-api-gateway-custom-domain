@@ -2,9 +2,9 @@
 module "test" {
   source = "../"
 
-  api_name                = "my-api"
-  certificate_arn         = "fake-aws-arn"
-  domain_name             = "example.com"
+  api_name        = "my-api"
+  certificate_arn = "fake-aws-arn"
+  domain_name     = "example.com"
 }
 
 provider "aws" {
