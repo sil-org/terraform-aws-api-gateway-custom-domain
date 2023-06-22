@@ -28,3 +28,8 @@ variable "create_dns_validation" {
   type        = bool
   default     = true
 }
+
+variable "stage" {
+  description = "The stage of the API to map this domain name to (e.g. 'dev' or 'prod')"
+  type        = string
+}
