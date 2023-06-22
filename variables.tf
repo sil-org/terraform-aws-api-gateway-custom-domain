@@ -13,3 +13,8 @@ variable "domain_name" {
   description = "The exact domain name for the API Gateway custom domain"
   type        = string
 }
+
+variable "stage" {
+  description = "The stage of the API to map this domain name to (e.g. 'dev' or 'prod')"
+  type        = string
+}
