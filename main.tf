@@ -14,3 +14,9 @@ resource "aws_api_gateway_domain_name" "this" {
     types = ["REGIONAL"]
   }
 }
+
+resource "aws_api_gateway_base_path_mapping" "this" {
+  api_id      = data.aws_api_gateway_rest_api.this.id
+  domain_name = var.domain_name
+  stage_name  = var.stage
+}

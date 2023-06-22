@@ -5,6 +5,7 @@ module "test" {
   api_name        = "my-api"
   certificate_arn = "fake-aws-arn"
   domain_name     = "example.com"
+  stage           = "dev"
 }
 
 provider "aws" {
