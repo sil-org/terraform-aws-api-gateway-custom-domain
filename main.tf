@@ -3,6 +3,8 @@
 # `aws_apigatewayv2_*` resources.
 data "aws_api_gateway_rest_api" "this" {
   name = var.api_name
+
+  depends_on = [aws_api_gateway_domain_name.this]
 }
 
 resource "aws_api_gateway_domain_name" "this" {
